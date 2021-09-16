@@ -1,7 +1,5 @@
 # RustFTDIOpenDMX
 
-![Enttec Open DMX USB](https://www.enttec.com/wp-content/uploads/2016/10/opendmxusbwebpic2.jpg)
-
 **DISCLAIMER**: still in testing
 
 Rust bindings for the [Enttec Open DMX USB](https://www.enttec.com/product/lighting-communication-protocols/dmx512/open-dmx-usb/) using the [FTDI D2XX Chip](https://ftdichip.com/product-category/products/ic/).
