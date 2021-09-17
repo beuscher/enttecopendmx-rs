@@ -37,6 +37,7 @@ interface.open();
 interface.set_channel(1 as usize, 255 as u8);
 interface.render();
 ```
+or simply run `cargo run --example rgb-chase`.
 
 ## Issues
 
