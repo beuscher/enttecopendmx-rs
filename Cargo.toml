@@ -6,7 +6,7 @@ version = "0.1.0"
 edition = "2018"
 description = "Rust bindings for the Enttec Open DMX USB using the FTDI D2XX Chip."
 readme = "README.md"
-license-file = "LICENSE.txt"
+license-file = "LICENSE"
 
 keywords = ["dmx", "ffi","ftdi","enttec","lighting"]
 categories = ["api-bindings","accessibility","hardware-support"]
