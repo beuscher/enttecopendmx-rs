@@ -1,7 +1,7 @@
 [package]
 name = "enttecopendmx"
-authors = ["Maximilian Beuscher <maximilianbeuscher@gmail.com>"]
-repository = "https://github.com/Beuscher/RustFTDIOpenDMX"
+authors = ["Maximilian Beuscher"]
+repository = "https://github.com/Beuscher/enttecopendmx-rs"
 version = "0.1.0"
 edition = "2018"
 description = "Rust bindings for the Enttec Open DMX USB using the FTDI D2XX Chip."
