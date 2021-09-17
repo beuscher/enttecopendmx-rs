@@ -1,4 +1,4 @@
-# RustFTDIOpenDMX
+# enttecopendmx-rs
 
 **DISCLAIMER**: still in testing
 
