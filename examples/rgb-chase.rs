@@ -11,6 +11,9 @@ fn main() {
     // new interface
     let mut interface = enttecopendmx::EnttecOpenDMX::new().unwrap();
 
+    // change sleeptime here (in ms) to modify the speed of the rgb chase
+    const SLEEPTIME: u64 = 100;
+
     interface.open().unwrap();
 
     loop {
@@ -19,7 +22,7 @@ fn main() {
             //interface.buffer[1] = interface.buffer[1] + 10;
             interface.render().unwrap();
             interface.set_channel(i as usize, 0 as u8);
-            thread::sleep(Duration::from_millis(100));
+            thread::sleep(Duration::from_millis(SLEEPTIME));
         }
     }
 }

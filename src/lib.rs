@@ -1,4 +1,4 @@
-//! Rust bindings for the [Enttec Open DMX USB] using the FTDI D2XX Chip.
+//! Rust bindings for the [Enttec Open DMX USB] and its FTDI D2XX Chip.
 //! 
 //! #Usage
 //! 
@@ -6,7 +6,7 @@
 //! 
 //! ```toml
 //! [dependencies]
-//! version = "~0.1.0"
+//! enttecopendmx = "0.1.0"
 //! ```
 //! 
 //! Further the corresponding driver for the Interface needs to be installed on the system. For further informations 
@@ -54,7 +54,7 @@ const READ_TIMEOUT: Duration = Duration::from_millis(1000);
 const WRITE_TIMEOUT: Duration = Duration::from_millis(1000);
 
 
-/// This struct represents an Enttec Open DMX Interface.
+/// This struct represents an Enttec Open DMX Interface. To create a new instance use the `new()` method or construct it "by hand". 
 #[allow(dead_code)]
 #[derive(Debug)]
 pub struct EnttecOpenDMX {
@@ -75,6 +75,8 @@ impl EnttecOpenDMX {
 
     /// Creates a new instance representing the Open DMX Interface, it uses the auto discovery provided by the [libftd2xx] crate.
     /// 
+    /// To select a specific device check the documentation of the [libftd2xx] crate and then create the struct.
+    ///
     /// [libftd2xx]: https://crates.io/crates/libftd2xx
     pub fn new() -> Result<EnttecOpenDMX,FtStatus> {
         let device_name = String::from("EnttecOpenDMX");
@@ -86,6 +88,7 @@ impl EnttecOpenDMX {
         let device_info = ft.device_info()?;
         let ftdi_status = ft.status()?;
 
+        // return interface
         Ok(EnttecOpenDMX {
             ftdi: ft,
             buffer: [0; BUF_SIZE],

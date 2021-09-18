@@ -2,9 +2,10 @@
 name = "enttecopendmx"
 authors = ["Maximilian Beuscher"]
 repository = "https://github.com/Beuscher/enttecopendmx-rs"
-version = "0.1.0"
+documentation = "https://docs.rs/enttecopendmx/0.1.0/enttecopendmx/"
+version = "0.1.1"
 edition = "2018"
-description = "Rust bindings for the Enttec Open DMX USB using the FTDI D2XX Chip."
+description = "Rust bindings for the Enttec Open DMX USB and its FTDI D2XX Chip."
 readme = "README.md"
 license-file = "LICENSE"
 
