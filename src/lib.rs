@@ -6,7 +6,7 @@
 //! 
 //! ```toml
 //! [dependencies]
-//! enttecopendmx = "0.1.0"
+//! enttecopendmx = "0.1.2"
 //! ```
 //! 
 //! Further the corresponding driver for the Interface needs to be installed on the system. For further informations 

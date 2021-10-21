@@ -15,7 +15,7 @@ Then, simply add this crate as a dependency in your `Cargo.toml`.
 
 ```toml
 [dependencies]
-enttecopendmx = "0.1.0"
+enttecopendmx = "0.1.2"
 ``` 
 ### Basic Example
 
