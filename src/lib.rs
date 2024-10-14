@@ -122,6 +122,16 @@ impl EnttecOpenDMX {
         }
     }
 
+    /// Gets a mutable reference to the inner buffer.
+    /// 
+    /// You can write new DMX values directly at indices from 1 to BUF_SIZE-1
+    /// 
+    /// Index 0 must remain 0
+    pub fn get_mut_buffer(&mut self) -> &mut [u8; BUF_SIZE]
+    {
+        &mut self.buffer
+    }
+
     /// Allows too set the whole state of the universe at once.
     pub fn set_buffer(&mut self, buf: [u8;BUF_SIZE]) {
         self.buffer = buf;
